@@ -1,0 +1,11 @@
+deploy:
+  provider: releases
+  skip_cleanup: true
+  overwrite: true
+  api_key: 3c842711753f810be0750cea482554a1f03ba708
+  file_glob: true
+  file: Users/moka/Documents/PaxKeyInjection/app/build/outputs/apk/release/*
+  /
+  on:
+    repo: ValCanBuild/TravisAndroidExample
+    tags: true
